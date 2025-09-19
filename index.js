@@ -14,8 +14,7 @@ app.use(cors({
   origin: [
     'http://localhost:3000',
     'https://localhost:3000',
-    // Add your frontend domain here after deployment
-    // 'https://your-frontend-domain.vercel.app'
+    'https://proctorly-frontend.vercel.app'
   ],
   credentials: true
 }));
@@ -101,3 +100,4 @@ app.use((err, req, res, next) => {
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
+
